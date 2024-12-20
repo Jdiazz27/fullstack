@@ -2,6 +2,78 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+@font-face {
+    font-family: 'brighamregular';
+    src: url('../FUENTES/webfontkit-20241220-000758/brigham-regular-webfont.woff2') format('woff2'),
+         url('../FUENTES/webfontkit-20241220-000758/brigham-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
+
+body {
+    font-family: brighamregular;
+}
+
+h1, h2, h3 {
+    font-family: brighamregular;
+}
+
+p {
+  font-family: "Roboto Condensed", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+header {
+    background: aliceblue;
+    padding: 30px;  
+    text-align: center;
+}
+
+nav {
+    float: left;
+    background-color: azure;
+    width: 30%;
+    height: 300px;
+    padding: 20px;
+}
+
+aside {
+    float: left;
+    background-color: blueviolet;
+    width: 70%;
+    height: 300px;
+    padding: 30px;
+}
+
+section {
+    width: 100%;
+    height: 300px;
+}
+
+section::after{
+    clear: both;
+    display: table;
+}
+
+footer {
+    background-color: bisque;
+    padding: 10px;
+    text-align: center;   
+    height: 300px;
+    width: 100%;
+}
+
+footer > p{
+    margin-top: 10px;
+}
+
+ @media (max-width:600px) {   /* hace que el menu "inicio - nosotros" se quite al momento de abrir con resoluciones pequeñas */
+    menu {
+        display: none;
+    }
+    nav, aside {              /* hace que el nav y el aside cambien su peso en resoluciones pequeñas */
+        width: 100%;
+    }
+ }
