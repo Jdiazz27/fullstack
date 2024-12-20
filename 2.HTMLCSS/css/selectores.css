@@ -1,0 +1,75 @@
+/* 
+css - lenguaje que permite incluir estilos (colores, fuentes tipograficas, margenes, rellenos
+    imagenes, responsive(adaptables a moviles)) en un elemento de html
+selector (tipo, clase, identificador, universales, atribuos, descendentes): selecciona un elemento 
+    del html 
+*/
+
+/* Selector universal */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Selector de tipo selecciona un elemento tag universal */
+/* selecciona todos los h1 que encuentre en el codigo */
+
+body {
+    background:  #f2f2f2;
+}
+
+h1 {
+    background-color: black;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* Selector de tipo selecciona un elemento por id o por clase */
+.bg-azul {
+    background: blue;
+    color: white;
+}
+#mi-titulo{
+    font-size: 30px ;
+    background-color: red;
+}
+
+/* Selector de tipo selecciona un elemento por atributo especifico */
+input[type="text"], 
+input[type="password"]{
+    background: black;
+    margin: 10px;
+    padding: 5px;
+    color: white;
+    border: none;
+}
+
+/* selector hijo */
+ul li a {
+    color: red;
+}
+
+/* selector hijo del hijo AJKAJSDKAJ*/
+/* o sea que decienda de un hijo*/
+ul li a > b {
+    color: purple;
+}
+
+/* pseudoclase */
+/* cuando pases el mouse por encima el color cambia a blanco y la letra a negro */
+h1:hover,
+.bg-azul:hover{
+    background: whitesmoke;
+    color: black;
+}
+
+/* pseudoelementos */
+p::before{
+    content: "¬¬¬";
+}
+p::first-line{
+    font-weight: bold;  /* aplica el bold en la primera linea del p (lorem) */
+    color: red;
+}

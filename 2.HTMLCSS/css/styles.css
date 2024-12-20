@@ -1,4 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    padding: 50px;
-    background-color: antiquewhite;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
