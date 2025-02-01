@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: hsl(235, 21%, 11%);  /* saturacion, brillo y luz*/
+    background: linear-gradient(to right, #310d67, #88288d);  
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,13 +17,14 @@ body{
     width: 400px;
     box-shadow: 2px 5px 8px black;
     padding: 10px;
+    background-color: #1c1f26;
 }
 
 h1{
     padding: 10px;
     text-align: left;
     margin-bottom: 25px;
-    color:antiquewhite;
+    color: antiquewhite;
 }
 
 .contenedor .input-section{
@@ -42,7 +43,7 @@ h1{
 }
 
 .contenedor .input-section button{
-    background-color: hsl(235, 21%, 11%);
+    background-color: hsl(235, 21%, 11%);   /* saturacion, brillo y luz*/
     border: none;
     box-shadow: 2px 5px 8px black;
     color:  antiquewhite;
@@ -51,6 +52,11 @@ h1{
     border-radius: 5px;
     margin-left: 10px;
     font-size: 20px;
+    transition: background 0.3s;
+}
+
+.input-section button:hover {
+    background-color: rgb(1, 60, 1);
 }
 
 #todoList{  /* como es un id se coloca el # y el nombre*/
@@ -62,6 +68,56 @@ h1{
     padding: 5px 10px;
     display: flex;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
     border-bottom: 1px #666;
+}
+
+.todoItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.todoItem span {
+    flex-grow: 1;
+    margin: 0 10px;
+    color: antiquewhite;
+}
+
+.todoItem button {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.todoItem button:hover {
+    background-color: darkred;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.footer button {
+    background: none;
+    border: none;
+    color: antiquewhite;
+    cursor: pointer;
+}
+
+.footer button.active,      /* se lee (un bton que tenga la clase active */
+.footer button:hover {
+    color:aliceblue;
+}
+
+#clear-completed {      /* # porque es un id*/
+    color: red;
 }
