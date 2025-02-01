@@ -1,0 +1,67 @@
+*{  /* ajuste universal*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* si se coloca este se respetan los pixeles*/
+    font-family: "Josefin Sans", serif;
+}
+
+body{
+    background-color: hsl(235, 21%, 11%);  /* saturacion, brillo y luz*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.contenedor{
+    width: 400px;
+    box-shadow: 2px 5px 8px black;
+    padding: 10px;
+}
+
+h1{
+    padding: 10px;
+    text-align: left;
+    margin-bottom: 25px;
+    color:antiquewhite;
+}
+
+.contenedor .input-section{
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.contenedor .input-section input{
+    color: antiquewhite;
+    padding: 10px;
+    outline: none; /* quita el borde que aparece al escribir*/
+    border-radius: 5px;
+    border: none; /* quita el borde */
+    width: 340px;
+    background-color: #25283C;
+}
+
+.contenedor .input-section button{
+    background-color: hsl(235, 21%, 11%);
+    border: none;
+    box-shadow: 2px 5px 8px black;
+    color:  antiquewhite;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+#todoList{  /* como es un id se coloca el # y el nombre*/
+    list-style: none;
+}
+
+#todoList li{     /* se coloca el elemento hijo, en este caso li*/
+    background-color: #25283C;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    border-bottom: 1px #666;
+}
