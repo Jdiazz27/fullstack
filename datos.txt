@@ -1,0 +1,2 @@
+pagina para mejorar frontend https://www.frontendmentor.io/home
+css flexbox https://medium.com/@MakeComputerScienceGreatAgain/understanding-flexbox-a-comprehensive-guide-992bcd5f04de
