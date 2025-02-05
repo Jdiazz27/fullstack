@@ -128,3 +128,7 @@ h1{
 #clear-completed {      /* # porque es un id*/
     color: red;
 }
+
+li{
+    color: antiquewhite;
+}
