@@ -20,6 +20,14 @@ body{
     background-color: #1c1f26;
 }
 
+h2 {
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: antiquewhite;
+}
+
 h1{
     padding: 10px;
     text-align: left;
@@ -113,8 +121,7 @@ h1{
     cursor: pointer;
 }
 
-.footer button.active,      /* se lee (un bton que tenga la clase active */
-.footer button:hover {
+.footer button:hover { /* hace que los botones del footer tengan el efecto hover*/
     color:aliceblue;
 }
 
